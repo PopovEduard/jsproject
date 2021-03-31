@@ -66,3 +66,19 @@ let personalMovieDB={
         }        
     }
 };
+
+const box = document.getElementById('box');
+const btns = document.getElementsByTagName('button');
+const circles = document.getElementsByClassName('circle');
+const hearts = document.querySelectorAll('.heart');
+const wrapper = document.querySelector('.wrapper');
+hearts.forEach(item => {
+    console.log(item);
+});
+const heart = document.querySelector('.heart');
+box.style.backgroundColor = 'red';
+box.style.width = '500px';
+box.style.cssText = 'background-color: red; width: 500px';
+const div = document.createElement('div');
+div.classList.add('black');
+document.body.append(div);
